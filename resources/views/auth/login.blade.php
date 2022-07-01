@@ -25,7 +25,7 @@
                         </div>
                         <p class="login-card-description">Connecter à votre compte</p>
                         <form method="POST" action="{{ route('login') }}" class="mx-auto">
-                            <!-- @csrf -->
+                            @csrf
                             <div class="form-group">
                                 <label for="email" class="sr-only">{{ __('Email Address') }}</label>
                                 <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email address" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
